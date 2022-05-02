@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select</title>
+</head>
+<body>
+    <main>
+        <form action="">
+            <label for="courses">
+                <span>Seleccione su curso</span>
+                <!-- <select name="courses" id="courses">
+                    <option value="Javascript">Javascript</option>
+                    <option value="HTML5">HTML5</option>
+                    <option value="CSS3">CSS3</option>
+                    <option value="Web Standards">Web Standards</option>
+                </select> -->
+                <input list="courses"/>
+                <datalist id="courses">
+                    <option value="Javascript"></option>
+                    <option value="HTML5"></option>
+                    <option value="CSS3"></option>
+                    <option value="Web Standards"></option>
+                </datalist>
+            
+            </label>
+        </form>
+    </main>
+</body>
+</html>

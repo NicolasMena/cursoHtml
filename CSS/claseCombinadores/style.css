@@ -1,0 +1,20 @@
+/* h2 + p {
+    color:red;
+}
+
+hermanos generales
+h2 ~ p {
+    color:red;
+} */
+
+/* combinador child */
+
+/* div > p {
+    color:red;
+} */
+
+/* Descendiente*/
+
+div p{
+    color: red
+}
