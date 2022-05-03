@@ -1,0 +1,330 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: Roboto;
+}
+
+/* html{
+    font-size: 62.5%;
+} */
+
+hr{
+    margin: 20px auto;
+}
+
+.back_stripe{
+    z-index: -10;
+    width: 100%;
+    background-color: #1876f267 ;
+    height: 30%;
+    position:absolute;
+    top:30%;
+
+}
+
+.product{
+    background-color: whitesmoke;
+    width: 450px;
+    height: 670px;
+    margin: 0 auto;
+    position:relative;
+    top:100px;
+    box-shadow:  5px 5px 3px lightgray;
+    border-radius: 10px;
+
+}
+
+
+.product__brand{
+    color:white;
+    background-color:rgb(17, 89, 223);
+    text-align: left;
+    padding-left:20px;
+    border-top-left-radius: 0px;
+    position:relative;
+    left:-5px;
+    width: 250px;
+    height: 50px;
+    bottom:15px;
+    line-height: 50px;
+    font-size:24px;
+    box-shadow:  5px 5px 3px lightgray;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-weight: bolder;
+    
+}
+
+.product__model{
+    text-transform:uppercase;
+    color:darkslategray;
+    position:relative;
+    font-weight: bolder;
+    font-size: 32px;
+    margin-left:20px;
+}
+
+
+.product__image-container{
+    position:absolute;
+    right:-100px;
+    bottom:100px;
+   
+
+   
+}
+
+.product__image-image{
+    width:270px;
+    height: 470px;
+    max-width: 280px;
+    object-fit: cover;
+    object-position: 100% 20;
+    filter: drop-shadow(5px 5px 5px rgba(5, 5, 32, 0.35));
+}
+
+.product__description{
+    position:relative;
+    top:40px;
+    height: 380px;
+    text-align: justify;
+    padding: 0 180px 0 20px;
+    overflow: hidden;
+    margin-bottom: 20px;   
+}
+
+.product__description-paragraph{
+    margin-bottom:10px;
+}
+
+.product__price-container{
+    position:relative;
+    width:220px;
+    left:290px;
+    bottom: 110px;
+}
+
+.product__price{
+    background-color:rgb(17, 89, 223);
+   
+    height:50px;
+    line-height: 50px;
+    color:white;
+    font-weight: bolder;
+    font-size:32px;
+    
+    padding: 0 10px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow:  5px 5px 3px  lightgray;
+
+}
+
+
+.product__discount{
+    background-color:rgb(252, 11, 11);
+    position:absolute;
+    width:50px;
+    height: 16px;
+    line-height: 16px;
+    color:white;
+    font-weight: bolder;
+    font-size:12px;
+    left:184px;
+    bottom: 40px;
+    text-align: center;
+    text-transform: uppercase;
+   
+
+}
+
+.product__discount-text{
+    text-transform: uppercase;
+}
+
+.product__price::after{
+    content:" CLP";
+    font-size:12px;
+}
+
+.product__taxes-n-shipping{
+    font-size: 12px;
+    color:darkslategray;
+    text-align:left;
+}
+
+.product__sub-header{
+    font-weight: bolder;
+    margin-bottom:10px;
+    text-transform: uppercase;
+    color:darkslategray
+    
+}
+
+
+.product__feature-container{
+    position: relative;
+    left:20px;
+   
+}
+
+.product__feature{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display:inline-block;
+    color:gray;
+    border: 2px gray solid;
+    text-align: center;
+    line-height: 50px;  
+    margin-right: 10px; 
+}
+
+.product__reviews-container{
+    position:relative;
+    left:20px;
+    top:20px;
+}
+.product__stars-container{
+    margin-bottom:5px;
+}
+.product__reviews-text{
+    text-transform: uppercase;
+    font-size:11px;
+}
+
+.product__socials-container{
+    position: relative;
+    left:-5px;
+    text-align: right;
+    color:darkslategray;
+    
+}
+
+.product__socials-container .product__sub-header{
+    display: inline-block;
+    margin-right:5px;
+}
+
+.product__socials-icon{
+    display:inline-block;
+    color:darkslategrey;
+    margin-right: 5px;
+}
+
+.fa-star{
+    color:#ffc400;
+}
+
+.fa-star-half-stroke{
+    color:#ffc400;
+}
+
+.fa-discord:hover{
+    color:#7289da;
+}
+
+.fa-facebook:hover{
+    color:#1877f2;
+}
+
+.fa-twitter:hover{
+    color:#1da1f2;
+}
+
+.fa-heart{
+    color:darkslategray;
+    position:absolute;
+    font-size:28px;
+    right:10px;
+    top:7px;
+    
+}
+
+.fa-heart:hover{
+    color:rgb(241, 47, 96);
+    filter: drop-shadow(0px 1px 3px rgba(5, 5, 32, 0.20));
+}
+
+.fa-heart:hover::after{
+    content:"+add";
+    position:absolute;
+    top:30px;
+    right:0px;
+    font-size:10px;
+    font-family: Roboto;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.page__copyright{
+    position: absolute;
+    text-align: center;
+    bottom:0;
+    width:100%;
+    height: 70px;
+    padding-top: 20px;
+    color:white;
+    background-color: #1877f2;
+    
+}
+
+
+ .fa-apple::after{
+    content:"ios 15.4.1";
+    position:absolute;
+    bottom:-15px;
+    left: 5px;
+    font-size:10px;
+    font-family: Roboto;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.fa-bluetooth::after{
+    content:"bt 5.0";
+    position:absolute;
+    bottom:-15px;
+    left: 140px;
+    font-size:10px;
+    font-family: Roboto;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.fa-bolt::after{
+    content:"quick \A charge";
+    white-space: pre;
+    word-wrap: break-word;
+    position:absolute;
+    bottom:-25px;
+    left: 200px;
+    font-size:10px;
+    font-family: Roboto;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.fa-expand::after{
+    content:"face id";
+    position:absolute;
+    bottom:-15px;
+    left: 72px;
+    font-size:10px;
+    font-family: Roboto;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.fa-wand-sparkles{
+    color:#ffc400
+}
+
+a{
+    text-decoration: none;
+}
+
+hr{
+    color:darkslategray;
+}
