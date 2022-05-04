@@ -1,0 +1,253 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Arial','Calibri','Sans-serif';
+}
+
+.nav{ 
+    height: 100px;
+    background-color: white;
+    border-bottom:3px solid red;
+    padding: 10px; 
+    width:100%;
+    overflow: hidden;
+}
+
+.logo{
+    display: inline-block;
+    color:red;
+}
+
+.nav__menu{
+    display: inline-block;
+    position:relative;
+    left:80rem;
+}
+.nav li{
+    display:inline-block;
+    line-height: 100px;
+    color:red;
+    padding-right: 25px;
+   
+}
+
+
+
+
+.main-content{
+   display: inline-block;
+
+}
+
+.main-content__sidebar{
+    display:inline-block;
+
+    width:25rem;
+
+}
+
+.sidebar__ads{
+    padding: 10px 20px ;
+    border-radius: 10px;;
+}
+.main-content__content{
+    display:inline-block;
+    position:absolute;
+    margin:15px;  
+}
+
+.main-content__content-text{
+    display: inline-block;
+    text-align: justify;
+    position:absolute;
+}
+
+.main-content__content-image{
+    display: inline-block;
+    width:400px;
+    position:absolute;
+    right: -450px;
+    top:100px;
+}
+
+.footer{
+    background-color: #2e9599;
+    background-color: white;
+    border-top: 3px solid red;
+    width: 100%;
+    position:fixed;
+    bottom:0;
+}
+
+.footer__block{
+    display: inline-block;
+    width: 40rem;
+    margin: 25px;
+    text-align: justify;
+}
+
+.ads-item__image{
+    width: 100px;
+    display: inline-block;
+}
+
+.ads-item__info-container{
+    display:inline-block
+}
+
+.ads-item__price{
+
+}
+
+.ads-item__discount{
+
+}
+
+.ads-item__tag{
+    border-radius: 5px;
+}
+
+.ads-item__tag___model-kit{
+    color:cornflowerblue
+}
+
+.price-container{
+    margin-top:25px;
+}
+
+.price-container__text-sale-price{
+    color:red;
+    font-size:48px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.price-container__text-sale-price::after{
+    content:"CLP";
+    color:red;
+    font-size:12px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.price-container__text-discount{
+    display: inline-block;
+    background-color: red;
+    color:white;
+    text-transform: uppercase;
+    padding:5px;
+    font-size:10px;
+    position: relative;
+    top:-20px;
+    left:-27px
+
+}
+
+.price-container__text-regular-price{
+    color:gray;
+    text-transform:uppercase;
+    position:relative;
+    right:-300px;
+    top:-30px;
+
+    font-size:10px;
+}
+
+.price__text-sale-price{
+
+}
+
+.main-content__content-heading{
+    text-transform: uppercase;
+    margin-top:25px;
+}
+
+.main-content__content-sub-heading{
+    text-transform: uppercase;
+    font-size:12px;
+    
+}
+
+
+.main-content__features{
+    position:relative;
+    top:150px;
+}
+
+.main-content__features{
+    position:relative;
+    padding-top:10px;
+}
+
+.main-content__feature-container li{
+    list-style: none;
+}
+
+.main-content__feature-container{
+    margin-top:10px;
+    margin-right:25px;
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid gray;
+    line-height: 50px;
+    text-align: center;
+    display:inline-block;
+}
+
+.fa-user::after{
+    content:"\A 8+ AGE";
+    white-space: pre;
+    word-wrap: break-word;
+    font-size:10px;
+    text-transform: uppercase;
+    font-family: 'Arial';
+    font-weight: lighter;
+    position:absolute;
+    bottom: -15px;
+    left: 10px;
+
+}
+
+.fa-envelope::after{
+    content:"\A Instructions \A included";
+    white-space: pre;
+    word-wrap: break-word;
+    font-size:10px;
+    text-transform: uppercase;
+    font-family: 'Arial';
+    font-weight: lighter;
+    position:absolute;
+    bottom: -25px;
+    left: 65px;
+
+}
+
+.fa-phone::after{
+    content:"\A Live \A assistance";
+    white-space: pre;
+    word-wrap: break-word;
+    font-size:10px;
+    text-transform: uppercase;
+    font-family: 'Arial';
+    font-weight: lighter;
+    position:absolute;
+    bottom: -25px;
+    left: 155px;
+
+}
+
+.fa-cogs::after{
+    content:"\A requires \A assembling";
+    white-space: pre;
+    word-wrap: break-word;
+    font-size:10px;
+    text-transform: uppercase;
+    font-family: 'Arial';
+    font-weight: lighter;
+    position:absolute;
+    bottom: -25px;
+    left: 230px;
+
+}
