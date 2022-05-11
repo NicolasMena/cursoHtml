@@ -1,0 +1,17 @@
+.content-container__sidebar{
+    width: 33%;
+    display: flex;
+    flex-wrap: wrap;
+  
+}
+.sidebar-container{    
+    padding:20px;
+    width: 100%;
+}
+
+.content-container{
+    display: flex;
+    flex-wrap:nowrap;
+    flex-direction: row;
+    flex-grow: 1;
+}

@@ -1,0 +1,166 @@
+:root{
+    --font-size-nav:1.8rem;
+    --font-size-global:1.6rem;
+    --font-family:'Roboto', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: var(--font-family);
+}
+
+p,
+a{
+    font-size: var(--font-size-global);
+}
+
+
+.main-container{
+    display:flex;
+    flex-direction:column;
+    width:100vw;
+    max-width: 960px;
+    margin:0 auto;
+
+}
+
+.navigation{
+    background-color: rgb(0,0,255, 0.8);
+    display:flex;
+    flex-direction: column;
+}
+
+.logo-container{
+    margin: 10px auto;
+}
+
+.navigation-list{
+   width: 100%;
+   display: flex;
+   flex-direction:row;
+   justify-content: right;
+   align-items: center;
+   padding: 0 10px;
+   flex-wrap: wrap;
+  
+}
+
+.navigation-list__logo{
+    /* margin-right: auto; */
+    margin: 0 auto;
+    flex-basis:100%;
+}
+
+.navigation-list__list-item{
+    font-size: var(--font-size-nav);
+    font-weight: 900;
+    text-align: center;
+    line-height: 50px;
+    padding:auto 0;
+    list-style: none;
+    flex-basis:25%;
+    height: 50px;
+    color:white;   
+}
+
+.navigation-list__list-item a{
+    text-decoration: none;
+    color:white;
+}
+
+
+
+.navigation-list__list-item a:hover{
+    text-decoration: none;
+    color:green;
+}
+
+.navigation-list__list-item a:visited{
+    text-decoration: none;
+    color:white;
+}
+
+.content-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.content-container__sidebar{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  
+}
+
+.sidebar-container{    
+    padding:20px;
+    width: 50%;
+}
+
+
+.sidebar-image{
+    width: 100%;
+    border-radius:10px;
+    
+}
+
+
+.sidebar-product-name{
+   text-decoration: none;
+   color:red;
+   font-weight: 600;
+  
+}
+
+.sidebar-product-price{
+    display: inline-block;
+    color:red;
+    font-weight: 900;
+    margin-top: 5px;;
+}
+
+.sidebar-product-discount{
+    display: inline-block;
+    background-color:red;
+    padding:5px;
+    color:white;
+    margin-top: 5px;;
+}
+
+.sidebar-product-discount::after{
+    content:"% OFF";
+}
+
+.content-content{
+    /* background-color: rgb(255,0,0, 0.5); */
+    padding:20px;
+    text-align: justify;
+    color:green;
+   
+   
+}
+
+
+
+.footer-container{
+    border-top:3px red solid;
+    height: 5vh;
+    position:relative;
+    bottom:0;
+    width: 100%;   
+}
+
+.footer-container__content{
+    padding: 20px;
+    text-align: center;   
+    background-color: rgb(255,0,0, 0.8);
+    color:white;
+}
