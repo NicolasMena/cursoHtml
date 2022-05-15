@@ -37,24 +37,11 @@
 
 .main-content{
    display: inline-block;
+   position: absolute;
+   width: 60rem;
+   top:150px;
+   left:200px;
 
-}
-
-.main-content__sidebar{
-    display:inline-block;
-
-    width:25rem;
-
-}
-
-.sidebar__ads{
-    padding: 10px 20px ;
-    border-radius: 10px;;
-}
-.main-content__content{
-    display:inline-block;
-    position:absolute;
-    margin:15px;  
 }
 
 .main-content__content-text{
@@ -71,20 +58,21 @@
     top:100px;
 }
 
-.footer{
-    background-color: #2e9599;
-    background-color: white;
-    border-top: 3px solid red;
-    width: 100%;
-    position:fixed;
-    bottom:0;
+.main-content__sidebar{
+    display:inline-block;
+    padding:30px 20px ;
+    width:25rem;
+
 }
 
-.footer__block{
-    display: inline-block;
-    width: 40rem;
-    margin: 25px;
-    text-align: justify;
+.sidebar__title{
+    text-transform: uppercase;
+    font-size:16px;   
+}
+
+.sidebar__ads{
+    padding: 10px 0;
+    border-radius: 10px;;
 }
 
 .ads-item__image{
@@ -94,14 +82,6 @@
 
 .ads-item__info-container{
     display:inline-block
-}
-
-.ads-item__price{
-
-}
-
-.ads-item__discount{
-
 }
 
 .ads-item__tag{
@@ -154,9 +134,32 @@
     font-size:10px;
 }
 
-.price__text-sale-price{
 
+.main-content__content{
+    display:inline-block;
+    position:absolute;
+    margin:0px auto;
+    padding: 0px auto;
 }
+
+
+
+.footer{
+    background-color: #2e9599;
+    background-color: white;
+    border-top: 3px solid red;
+    width: 100%;
+    position:fixed;
+    bottom:0;
+}
+
+.footer__block{
+    display: inline-block;
+    width: 40rem;
+    margin: 25px;
+    text-align: justify;
+}
+
 
 .main-content__content-heading{
     text-transform: uppercase;
@@ -250,4 +253,37 @@
     bottom: -25px;
     left: 230px;
 
+}
+
+.main-content__buttons_container{
+    position: absolute;
+    right:-500px;
+    bottom:-180px;
+    color:white;
+}
+
+.main-content__button{
+    height: 2.5rem;
+    border-radius: 10px;
+    color:white;
+    font-size:16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border:none;
+}
+
+
+.main-content__button.wishlist{
+    background-color:orange;
+    width:150px;
+}
+
+.main-content__button.buy{
+    background-color: green;
+    width:150px;
+}
+
+.main-content__button.add-to-cart{
+    background-color: cornflowerblue;
+    width:150px;
 }
